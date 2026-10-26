@@ -1,0 +1,30 @@
+# 文書
+docs/
+
+# 環境変数・機密情報
+.env
+
+# Python関連
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# Jupyter Notebook関連
+notebooks/
+.ipynb_checkpoints/
+
+# データ・生成ファイル
+results/
+
+# テスト・評価関連
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Linter・Formatter関連
+.ruff_cache/
+
+# OS関連
+.DS_Store

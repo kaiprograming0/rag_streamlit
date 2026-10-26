@@ -1,0 +1,30 @@
+[project]
+name = "rag-streamlit"
+version = "0.1.0"
+description = "Streamlitを用いたRAGアプリケーション"
+requires-python = ">=3.14,<3.15"
+dependencies = [
+    "streamlit",
+    "langchain",
+    "langchain-community",
+    "langchain-openai",
+    "faiss-cpu",
+    "python-dotenv",
+]
+
+[dependency-groups]
+dev = [
+    "pytest",
+    "ruff",
+]
+
+[tool.ruff]
+line-length = 88
+target-version = "py314"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
